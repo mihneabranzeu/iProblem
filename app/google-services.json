@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "884445474160",
+    "firebase_url": "https://acidulat-eb122.firebaseio.com",
+    "project_id": "acidulat-eb122",
+    "storage_bucket": "acidulat-eb122.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884445474160:android:3374080a054e746f",
+        "android_client_info": {
+          "package_name": "com.acidulat.iproblem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884445474160-bf844r147glah77vanvgu8k9ged1qd9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4qpUeM3Yci4qnKoFc2nNwRWqRxHjwnQI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
