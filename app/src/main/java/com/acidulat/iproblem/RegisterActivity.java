@@ -78,7 +78,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                    }
                    else {
                        progressDialog.dismiss();
-                       Toast.makeText(RegisterActivity.this,"Could not register",Toast.LENGTH_LONG).show();
+                       Toast.makeText(RegisterActivity.this,"Could not register...",Toast.LENGTH_LONG).show();
                    }
 
              }
