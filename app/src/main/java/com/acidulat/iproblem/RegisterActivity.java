@@ -30,6 +30,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        firebaseAuth= FirebaseAuth.getInstance();
+        if(firebaseAuth.getCurrentUser() != null)
+        {
+            finish();
+            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+        }
+
         btnSignUp = (Button)findViewById(R.id.buttonSignIn);
         textViewSignIn = (TextView) findViewById(R.id.textViewSignIn);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
