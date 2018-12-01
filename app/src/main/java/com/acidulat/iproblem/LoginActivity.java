@@ -40,7 +40,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         if(firebaseAuth.getCurrentUser() != null)
         {
-
+            finish();
+            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
         }
 
         btnSignIn = (Button) findViewById(R.id.buttonSignIn);
@@ -104,6 +105,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
 
         if(view == textViewSignUp){
+            finish();
             startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
         }
     }
