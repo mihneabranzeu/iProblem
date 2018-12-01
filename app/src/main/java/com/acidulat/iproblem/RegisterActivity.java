@@ -65,6 +65,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         //if validations are ok
          progressDialog.setMessage("Registering user...");
         progressDialog.show();
+
          firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
              @Override
              public void onComplete(@NonNull Task<AuthResult> task) {
@@ -76,7 +77,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                        startActivity(intent);
                    }
                    else {
-                      Toast.makeText(RegisterActivity.this,"Could not register",Toast.LENGTH_LONG).show();
+                       progressDialog.dismiss();
+                       Toast.makeText(RegisterActivity.this,"Could not register...",Toast.LENGTH_LONG).show();
                    }
 
              }
