@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if(firebaseAuth.getCurrentUser() != null)
         {
             finish();
-            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+            startActivity(new Intent(getApplicationContext(),MainActivity.class));
         }
 
         btnSignIn = (Button) findViewById(R.id.buttonSignIn);
@@ -88,7 +88,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                         progressDialog.dismiss();
                         if(task.isSuccessful())
-                            startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
+                            startActivity(new Intent(LoginActivity.this, MainActivity.class));
                         else
                         {
                             Toast.makeText(LoginActivity.this,"Authentification failed. Please try again",Toast.LENGTH_LONG).show();
