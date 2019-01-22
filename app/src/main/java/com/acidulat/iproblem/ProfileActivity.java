@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
+public class ProfileActivity extends AppCompatActivity  {
 
     private TextView userText;
     private Button logOutButton;
@@ -26,15 +26,15 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             finish();
             startActivity(new Intent(getApplicationContext(),LoginActivity.class));
         }
-        userText = (TextView) findViewById(R.id.textView2);
-        logOutButton = (Button) findViewById(R.id.logOutBtn);
+
+        //logOutButton = (Button) findViewById(R.id.logOutBtn);
 
 
 
-        logOutButton.setOnClickListener(this);
+        //logOutButton.setOnClickListener(this);
     }
 
-    @Override
+    /*@Override
     public void onClick(View view) {
         if(view == logOutButton) {
                firebaseAuth.signOut();
@@ -42,5 +42,6 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
                startActivity(new Intent(getApplicationContext(),LoginActivity.class));
         }
 
-    }
+    }*/
+
 }

@@ -34,7 +34,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         if(firebaseAuth.getCurrentUser() != null)
         {
             finish();
-            startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+            startActivity(new Intent(getApplicationContext(),MainActivity.class));
         }
 
         btnSignUp = (Button)findViewById(R.id.buttonSignIn);
@@ -80,7 +80,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                        //user is succesfully registered and logged in
                        //we will start a activity here
                        Toast.makeText(RegisterActivity.this,"Registered succsesfully",Toast.LENGTH_LONG).show();
-                       Intent intent = new Intent(RegisterActivity.this,ProfileActivity.class);
+                       Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
                        startActivity(intent);
                    }
                    else {
